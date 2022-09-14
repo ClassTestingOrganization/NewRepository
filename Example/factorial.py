@@ -1,3 +1,7 @@
+import imp
+
+
+import math
 
 def factorial(n):
   r=1
@@ -7,7 +11,7 @@ def factorial(n):
   print('print r =',r)
 
 def BranchFactorial(n):
-  r=0
+  r=2
   for i in range(1,n+1):
     r += math.log(r)
   return r
