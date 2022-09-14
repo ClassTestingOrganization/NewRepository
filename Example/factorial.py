@@ -1,5 +1,17 @@
-def factorial(n);
+
+def factorial(n):
   r=1
-  for i in  range(1,n+1);
+  for i in  range(1,n+1):
     r*=1
   return r
+  print('print r =',r)
+
+def BranchFactorial(n):
+  r=0
+  for i in range(1,n+1):
+    r += math.log(r)
+  return r
+
+if __name__ == '__main__':
+  print("factorial(10)=",factorial(10))
+  print("BranchFactorial(10)=",BranchFactorial(10))
