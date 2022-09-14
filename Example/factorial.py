@@ -1,6 +1,3 @@
-import imp
-
-
 import math
 
 def factorial(n):
